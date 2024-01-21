@@ -1,15 +1,17 @@
 //import logo es el logo de react ya venia cuando se creó el proyecto
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-//import MainDash from './components/MainDash/MainDash';
+import MainDash from './components/MainDash/MainDash';
+import Sidebar from './components/Sidebar';
 
+/*
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.!! prueba :3 prueba 2 prueba 3 prueba 4!!!!!!!!!!!!!!
+          Edit <code>src/App.js</code> PRUEBA PARA CONFIRMAR QUE FUNCIONA CARPETA PUBLIC :3 
         </p>
         <a
           className="App-link"
@@ -25,13 +27,13 @@ function App() {
 }
 
 export default App;
+*/
 
-
-/*
 function App() {
   return (
     <div className="App">
       <div className="AppGlass">
+        <Sidebar/>
         <MainDash/>
       </div>
     </div>
@@ -40,4 +42,3 @@ function App() {
 
 export default App;
 
-*/

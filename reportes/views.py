@@ -2,8 +2,15 @@ from django.http import HttpResponse
 import datetime
 from django.views.generic import TemplateView, ListView
 from reportes.models import Agente
-#creo :c ahhahaha ya será un problema para itzel del futuro xdxd emmm ir a mi pagina donde viene los metodos y ver para que sirven cada uno xdxdxd y poner el correcto y luego poner agente ahhhh no se xdxdxd 
 #list view tiene más metodos y está nefocada en hacer una lista de objetos de una base de datos :3 gracias!!!! 
+####################### una manera de 
+from rest_framework import viewsets
+from .models import Evaluacion
+from .serializers import EvaluacionSerializer
+####################### otra manera de ordenar los datos en el backend 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 
 def current_datetime(request):
     now = datetime.datetime.now()
@@ -38,3 +45,20 @@ class AgentLisView(ListView):
     # si// entonces con.all se traen a todos los objetos de la clase agente :3 siisisis y .filter solo filtra va me rindo hahahah me odio chale 
     # no haha salu2 agente es la llave?!objecti list entocnes es object list? 
     queryset = Agente.objects.all()
+
+
+####################### importar el modelo de evaluacion, se importa los modelos de json  manera 1 
+
+class EvaluacionViewSet(viewsets.ModelViewSet):
+    queryset = Evaluacion.objects.all()
+    serializer_class = EvaluacionSerializer
+########################## manera 2 
+    
+class ListaEvaluaciones(APIView):
+    def get(self, request, format=None):
+        evaluaciones = Evaluacion.objects.all()
+        lista_evaluaciones = [
+            evaluacion.evaluacion for evaluacion in evaluaciones
+        ]
+        return Response(lista_evaluaciones)
+    

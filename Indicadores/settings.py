@@ -27,7 +27,31 @@ SECRET_KEY = 'django-insecure-4)-fbyu7k!poj4!#=*8*nb(=irw7g8&339q%-hx9^=-7cksi-1
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+#configuracion cors
+CORS_ORIGIN_ALLOW_ALL = True
 
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+
+# settings.py
 
 # Application definition
 
@@ -39,12 +63,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #Todo lo que encuentre de Model.models en reportes lo va a tomar como base de datos 
-    'reportes'
+    'reportes', 
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

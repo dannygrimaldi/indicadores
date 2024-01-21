@@ -5,7 +5,7 @@ import "./MainDash.css";
 const MainDash = () => {
   return (
     <div className="MainDash">
-      <h1>Indicadores</h1>
+      <h1>Indicadores!!!!!!!!!x2</h1>
       <Cards/>
       <Table/>
     </div>

@@ -1,6 +1,7 @@
-//este logo es de react xD se puede quitar cuando se requiera :3 
+//import logo es el logo de react ya venia cuando se creó el proyecto
 import logo from './logo.svg';
 import './App.css';
+//import MainDash from './components/MainDash/MainDash';
 
 function App() {
   return (
@@ -24,3 +25,19 @@ function App() {
 }
 
 export default App;
+
+
+/*
+function App() {
+  return (
+    <div className="App">
+      <div className="AppGlass">
+        <MainDash/>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+*/

@@ -8,18 +8,24 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
 
-function createData(name, trackingId, date, status) {
-  return { name, trackingId, date, status };
+//function createData(name, trackingId, date, status) {
+  //return { name, trackingId, date, status };
+//}
+
+function createData(name, trackingId, date, status, kpi) {
+  return { name, trackingId, date, status, kpi};
 }
 
+
 const rows = [
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+  createData("Advance", "México", "Eleonor Salazar Estrada", 98.6, "QA"),
+  createData("Prevención de Fraudes", "Guadalajara", "Oscar Alberto Ramirez", 325, "AHT"),
+  createData("Premier", "Guadalajara", "Alberto Raúl Aranza", 95, "ADH"),
+  createData("Altas Ventas", "México", "Fernando Salzar Quiñonez", 93.9, "QA"),
+  createData("Personal Banking", "México", "Roberto Hernández Quiroga ", 93.9, "QA")
 ];
 
-
+/*Aqui cambias el color dependiento de lo que aparezca :3
 const makeStyle=(status)=>{
   if(status === 'Approved')
   {
@@ -43,10 +49,34 @@ const makeStyle=(status)=>{
   }
 }
 
+*/
+//Aqui cambias el color dependiento de lo que aparezca :3
+const makeStyle=(status)=>{
+  if(parseFloat(status) > 95)
+  {
+    return {
+      background: 'rgb(145 254 159 / 47%)',
+      color: 'green',
+    }
+  }
+  else if(parseFloat(status) < 95)
+  {
+    return{
+      background: '#ffadad8f',
+      color: 'red',
+    }
+  }
+  else{
+    return{
+      background: '#ace6fc',
+      color: 'gray',
+    }
+  }
+}
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h3>TOP</h3>
+      <h3>Top Unidades</h3>
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
@@ -54,11 +84,11 @@ export default function BasicTable() {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Sitio</TableCell>
-                <TableCell align="left">Unidad</TableCell>
+                <TableCell>Unidad</TableCell>
+                <TableCell align="left">Sitio</TableCell>
                 <TableCell align="left">Gerente</TableCell>
+                <TableCell align="left">Rating</TableCell>
                 <TableCell align="left">KPI</TableCell>
-                <TableCell align="left"></TableCell>
               </TableRow>
             </TableHead>
             <TableBody style={{ color: "white" }}>
@@ -75,7 +105,8 @@ export default function BasicTable() {
                   <TableCell align="left">
                     <span className="status" style={makeStyle(row.status)}>{row.status}</span>
                   </TableCell>
-                  <TableCell align="left" className="Details">Ir</TableCell>
+                  <TableCell align="left">{row.kpi}</TableCell>
+                  <TableCell align="left" className="Details"> Ir </TableCell>
                 </TableRow>
               ))}
             </TableBody>

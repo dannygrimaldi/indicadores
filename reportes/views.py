@@ -52,7 +52,7 @@ class AgentLisView(ListView):
 class EvaluacionViewSet(viewsets.ModelViewSet):
     queryset = Evaluacion.objects.all()
     serializer_class = EvaluacionSerializer
-########################## manera 2 
+########################## manera 2  xD
     
 class ListaEvaluaciones(APIView):
     def get(self, request, format=None):

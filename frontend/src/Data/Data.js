@@ -47,7 +47,7 @@ export const cardsData = [
   {
     title: "Calidad",
     color: {
-      backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
+      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 93.4,
@@ -56,9 +56,13 @@ export const cardsData = [
     //png: UilUsdSquare,
     series: [
       {
-        name: "Sales",
-        data: [31, 40, 28, 51, 42, 109, 100],
+        name: "México",
+        data: [78, 80, 28, 51, 80, 67, 98],
       },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+      }
     ],
   },
   {
@@ -75,8 +79,12 @@ export const cardsData = [
     //png: UilMoneyWithdrawal,
     series: [
       {
-        name: "Revenue",
+        name: "México",
         data: [10, 100, 50, 70, 80, 30, 40],
+      },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
       },
     ],
   },
@@ -92,13 +100,25 @@ export const cardsData = [
     png: UilClipboardAlt,
     series: [
       {
-        name: "Expenses",
+        name: "México",
         data: [10, 25, 15, 30, 12, 15, 20],
       },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+    },
     ],
   },
 ];
 
+//AQUI PONEMOS EL MENSAJE DEL ROBOT :3 
+export const UpdatesData = [
+  {
+    img: robot,
+    mensaje: "Si tienes alguna duda o sugerencia sobre éste Dashboard, escribenos y el equipo de Robotics te ayudará ",
+  },
+  
+];
 // Recent Update Card Data
 /*export const UpdatesData = [
   {
@@ -133,10 +153,3 @@ export const UpdatesData = [
   
 ];
 */
-export const UpdatesData = [
-  {
-    img: robot,
-    mensaje: "Si tienes alguna duda o sugerencia sobre de éste Dasboard, escribenos y el equipo de Robotics te ayudará ",
-  },
-  
-];

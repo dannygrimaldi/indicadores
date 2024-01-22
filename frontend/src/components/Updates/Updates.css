@@ -24,7 +24,7 @@
 }
 
 .mensajerobotics {
-    color: rgb(250, 245, 245);
+    color: rgb(27, 26, 26);
     font-weight: normal; /* Establecer la letra como normal (no negrita) */
     font-family: "Arial", sans-serif; /* Tipo de letra por defecto */
 
@@ -33,7 +33,7 @@
 .mensaje {
     border-radius: 0.3rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid #e0adad;
     font-size: 13px;
     width: auto; /* Ajusta el ancho automáticamente al contenido */
   }

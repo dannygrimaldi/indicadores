@@ -7,9 +7,10 @@
     padding: 1rem;
     position: relative;
     cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Agregamos una transición para suavizar el cambio */
   }
   .CompactCard:hover {
-    box-shadow: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos el efecto de sombra al pasar el cursor */
   }
   
   /* radial bar */

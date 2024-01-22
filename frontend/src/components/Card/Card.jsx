@@ -28,7 +28,7 @@ function CompactCard({ param, setExpanded }) {
     <motion.div
       className="CompactCard"
       style={{
-        background: param.color.backGround,
+        background: param.color.backGround
         //boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard"
@@ -102,6 +102,7 @@ function ExpandedCard({ param, setExpanded }) {
         ],
       },
     },
+
   };
 
   return (

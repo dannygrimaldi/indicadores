@@ -3,14 +3,15 @@
     flex: 1;
     height: 7rem !important;
     border-radius: 0.7rem;
+    /* aqui se cambia el color de la letra en las cartitas sin expandir*/
     color: white;
     padding: 1rem;
     position: relative;
     cursor: pointer;
-    transition: box-shadow 0.3s ease; /* Agregamos una transición para suavizar el cambio */
+    transition: boxShadow 0.3s ease; /* Agregamos una transición para suavizar el cambio */
   }
   .CompactCard:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos el efecto de sombra al pasar el cursor */
+    box-shadow: 0 0 10px rgba(153, 168, 184, 0.3); /* Agregamos el efecto de sombra al pasar el cursor */
   }
   
   /* radial bar */

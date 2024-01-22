@@ -16,6 +16,7 @@ import { keyboard } from "@testing-library/user-event/dist/keyboard";
 import img1 from "../imgs/img1.png";
 import img2 from "../imgs/img2.png";
 import img3 from "../imgs/img3.png";
+import robot from "../imgs/robot.svg";
 
 // Sidebar Data
 export const SidebarData = [
@@ -44,14 +45,15 @@ export const SidebarData = [
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Ventas",
+    title: "Calidad",
     color: {
       backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%)",
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
-    barValue: 70,
-    value: "25,970",
-    png: UilUsdSquare,
+    barValue: 93.4,
+    value: "93",
+    png: UilClipboardAlt,
+    //png: UilUsdSquare,
     series: [
       {
         name: "Sales",
@@ -60,14 +62,17 @@ export const cardsData = [
     ],
   },
   {
-    title: "Calidad",
+    title: "Adherencia",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
       boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
-    barValue: 80,
-    value: "14,270",
-    png: UilMoneyWithdrawal,
+    //Aquí se cambia el valor de la ruedita de la gráfica
+    barValue: 87.2,
+    //Aquí se cambia el valor que aparece en cada carta :3 
+    value: "87",
+    png: UilClipboardAlt,
+    //png: UilMoneyWithdrawal,
     series: [
       {
         name: "Revenue",
@@ -76,14 +81,14 @@ export const cardsData = [
     ],
   },
   {
-    title: "KPI's",
+    title: "AHT",
     color: {
       backGround:
         "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
-    barValue: 60,
-    value: "4,270",
+    barValue: 93,
+    value: "327 s",
     png: UilClipboardAlt,
     series: [
       {
@@ -95,7 +100,7 @@ export const cardsData = [
 ];
 
 // Recent Update Card Data
-export const UpdatesData = [
+/*export const UpdatesData = [
   {
     img: img1,
     name: "Andrew Thomas",
@@ -114,4 +119,24 @@ export const UpdatesData = [
     noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
     time: "2 hours ago",
   },
+];
+*/
+
+/*
+export const UpdatesData = [
+  {
+    img: robot,
+    name: "Andrew Thomas",
+    noti: "has ordered Apple smart watch 2500mh battery.",
+    time: "25 seconds ago",
+  },
+  
+];
+*/
+export const UpdatesData = [
+  {
+    img: robot,
+    mensaje: "Si tienes alguna duda o sugerencia sobre de éste Dasboard, escribenos y el equipo de Robotics te ayudará ",
+  },
+  
 ];

@@ -6,8 +6,6 @@ const MainDash = () => {
   return (
     <div className="MainDash">
       <h1> </h1>
-      
-      
       <Cards/>
       <Table/>
     </div>

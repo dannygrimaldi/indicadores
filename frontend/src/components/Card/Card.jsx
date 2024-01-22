@@ -29,7 +29,7 @@ function CompactCard({ param, setExpanded }) {
       className="CompactCard"
       style={{
         background: param.color.backGround,
-        boxShadow: param.color.boxShadow,
+        //boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard"
       onClick={setExpanded}

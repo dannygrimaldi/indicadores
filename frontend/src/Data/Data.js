@@ -13,9 +13,7 @@ import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
 import { keyboard } from "@testing-library/user-event/dist/keyboard";
 
 // Recent Card Imports
-import img1 from "../imgs/img1.png";
-import img2 from "../imgs/img2.png";
-import img3 from "../imgs/img3.png";
+//import img1 from "../imgs/img1.png";
 import robot from "../imgs/robot.svg";
 
 // Sidebar Data
@@ -115,7 +113,7 @@ export const cardsData = [
 export const UpdatesData = [
   {
     img: robot,
-    mensaje: "Si tienes alguna duda o sugerencia sobre éste Dashboard, escribenos y el equipo de Robotics te ayudará ",
+    mensaje: "Si tienes alguna duda o sugerencia sobre éste Dashboard, escribenos y el equipo de Robotics te ayudará.",
   },
   
 ];

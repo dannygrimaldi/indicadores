@@ -76,7 +76,7 @@ return (
           <img src={update.img} alt="profile" />
           <div className="noti">
             <div style={{ marginBottom: "0.5rem" }}>
-              <span className="mensaje">{update.mensaje}</span>
+              <span className="mensajerobotics">{update.mensaje}</span>
             </div>
           </div>
         </div>
@@ -85,14 +85,15 @@ return (
 
 {/* Caja de texto editable (input) */}
       <input
+        className="mensaje"
         type="text"
         value={textInput}
         onChange={handleInputChange}
-        placeholder="Escribe tu mensaje"
+        placeholder="Escribe tu mensaje..."
       />
 
       {/* Botón de enviar */}
-      <button onClick={handleEnviarClick}>Enviar</button>
+      <button className="botonenviar" onClick={handleEnviarClick}>Enviar</button>
     </div>
   );
 };

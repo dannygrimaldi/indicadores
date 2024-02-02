@@ -45,7 +45,7 @@ const Updates = () => {
     alert(`Texto a enviar: ${textInput}`);
   };
 
-{/*Descomentar todo el párrafo en caso de que se requiera hacer un mapero de la informacion con las etiquetas de las llaves*/}
+{/*Descomentar todo el párrafo en caso de que se requiera hacer un mapeo de la informacion con las etiquetas de las llaves*/}
 {/* 
   return (
     <div className="Updates">
@@ -65,7 +65,7 @@ const Updates = () => {
         );
       })}
 */}
-{/*Descomentar todo el párrafo línea en caso de que se requiera hacer un mapero de la informacion con las etiquetas de las llaves*/}
+{/*Descomentar todo el párrafo línea en caso de que se requiera hacer un mapeo de la informacion con las etiquetas de las llaves*/}
 
 return (
   <div className="Updates">

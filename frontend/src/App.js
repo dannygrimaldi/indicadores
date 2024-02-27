@@ -1,46 +1,34 @@
-//import logo es el logo de react ya venia cuando se creó el proyecto
-//import logo from './logo.svg';
-import './App.css';
-import CustomerReview from './components/CustomerReview/CustomerReview';
-import RightSide from './components/RigtSide/RightSide';
-import Sidebar from './components/Sidebar1';
 
-/*
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> PRUEBA PARA CONFIRMAR QUE FUNCIONA CARPETA PUBLIC :3 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React aiuda
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+/* import Course from './pages/Course'
+import Profile from './pages/Profile'
+import Login from './pages/LoginPage'; 
+import { AuthProvider } from './context/AuthContext'
+import PrivateRoute from './utils/PrivateRoute'
 */
 
+import Layout from './components/Layout'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from './pages/Home'
+import Dashboard from './pages/Dashboard'
+
+
+
 function App() {
-  return (
-    <div className="App">
-      <div className="AppGlass">
-        <Sidebar/>
-        <CustomerReview/>
-        <RightSide/>
-      </div>
-    </div>
-  );
+    return (
+        <Router>
+            {/* <AuthProvider>
+                */}
+                <Layout> 
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/estadisticas' element={<Dashboard />} />
+                </Routes>
+            </Layout>
+           {/* 
+            </AuthProvider> */}
+        </Router>
+    )
 }
 
-export default App;
-
+export default App

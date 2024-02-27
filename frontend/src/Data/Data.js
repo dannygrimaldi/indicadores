@@ -21,7 +21,7 @@ export const SidebarData = [
   {
     icon: UilEstate,
     heading: "Panel",
-    Link: '/',
+    Path: '/',
   },
   // {
   //   icon: UilClipboardAlt,
@@ -38,7 +38,7 @@ export const SidebarData = [
   {
     icon: UilChart,
     heading: 'Estadísticas',
-    Link: '/Estadisticas',
+    Path: '/estadisticas',
   },
 ];
 

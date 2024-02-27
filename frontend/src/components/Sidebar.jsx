@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../imgs/logo_hsbc.svg";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
@@ -7,29 +7,11 @@ import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { Link, useLocation, /* useNavigate */ } from 'react-router-dom'
 
-const Sidebar = ({ setSelectedView }) => {
+
+const Sidebar = () => {
   const [selected, setSelected] = useState(0);
-  const [expanded, setExpanded] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const handleToggleSidebar = () => {
-    setExpanded(!expanded);
-    if (!expanded) {
-      setSelectedView("dashboard");
-    }
-  };
+  const [expanded, setExpaned] = useState(true)
 
   const sidebarVariants = {
     true: {
@@ -38,33 +20,44 @@ const Sidebar = ({ setSelectedView }) => {
     false: {
       left: '-60%'
     }
-  };
-
+  }
+  console.log(window.innerWidth)
   return (
     <>
-      <div className="bars" style={expanded ? { left: '60%' } : { left: '5%' }} onClick={handleToggleSidebar}>
+      <div className="bars" style={expanded ? { left: '60%' } : { left: '5%' }} onClick={() => setExpaned(!expanded)}>
         <UilBars />
       </div>
-      <motion.div className='sidebar' variants={sidebarVariants} animate={windowWidth <= 768 ? `${expanded}` : ''}>
+      <motion.div className='sidebar'
+        variants={sidebarVariants}
+        animate={window.innerWidth <= 768 ? `${expanded}` : ''}
+      >
         {/* logo */}
-        <Link to='/'>
+        <Link to='/' className="link" >
           <div className="logo">
             <img src={Logo} alt="logo" />
             <span>HSBC</span>
           </div>
         </Link>
-  
+
         <div className="menu">
-          <ul>
-            {SidebarData.map((item, index) => (
-              <li key={index} className={selected === index ? "menuItem active" : "menuItem"}>
-                <Link to={item.Path}>
-                  <item.icon />
-                  <span>{item.heading}</span>
+          {SidebarData.map((item, index) => {
+            return (
+
+              <div
+                className={selected === index ? "menuItem active" : "menuItem"}
+                key={index}
+                onClick={() => setSelected(index)}
+              >
+                <Link to={item.Path} className="link">
+                  <div className="link-content">
+                    <item.icon />
+                    <span>{item.heading}</span>
+                  </div>
                 </Link>
-              </li>
-            ))}
-          </ul>
+
+              </div>
+            );
+          })}
           {/* signoutIcon */}
           <div className="menuItem">
             <UilSignOutAlt />
@@ -76,3 +69,4 @@ const Sidebar = ({ setSelectedView }) => {
 };
 
 export default Sidebar;
+

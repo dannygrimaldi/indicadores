@@ -19,13 +19,13 @@ function App() {
         <Router>
             {/* <AuthProvider>
                 */}
-                <Layout> 
+            <Layout>
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/estadisticas' element={<Dashboard />} />
                 </Routes>
             </Layout>
-           {/* 
+            {/* 
             </AuthProvider> */}
         </Router>
     )

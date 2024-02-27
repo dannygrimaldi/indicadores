@@ -23,23 +23,26 @@ export const SidebarData = [
     heading: "Panel",
     Path: '/',
   },
-  // {
-  //   icon: UilClipboardAlt,
-  //   heading: "Orders",
-  // },
-  // {
-  //   icon: UilUsersAlt,
-  //   heading: "Customers",
-  // },
-  // {
-  //   icon: UilPackage,
-  //   heading: 'Products'
-  // },
+   {
+     icon: UilClipboardAlt,
+   heading: "Orders",
+   Path: '/estadisticas',
+ },
+ {
+   icon: UilUsersAlt,
+   heading: "Customers",
+   Path: '/',
+ },
+ {
+   icon: UilPackage,
+   heading: 'Products',
+   Path: '/estadisticas',
+ },
   {
     icon: UilChart,
-    heading: 'Estadísticas',
+    heading: "Estadisticas",
     Path: '/estadisticas',
-  },
+  }
 ];
 
 // Analytics Cards Data

@@ -1,15 +1,16 @@
 import React from 'react'
-// import Navbar from './Navbar'
 import Sidebar from './Sidebar'
+import RightSide from './RigtSide/RightSide';
+
 
 const Layout = ({ children }) => {
     return (
         <>
-            <div className='flex flex-auto h-screen'>
-                <Sidebar />
-                <div className='grow'>
-                    {/* <Navbar /> */}
-                    <div className='m-5'>{children}</div>
+            <div className="App">
+                <div className="AppGlass">
+                    <Sidebar />
+                    { children }
+                    <RightSide />
                 </div>
             </div>
         </>

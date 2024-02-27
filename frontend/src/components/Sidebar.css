@@ -10,6 +10,21 @@
   display: none;
 }
 
+/*link*/
+.link {
+  text-decoration: none; /* Elimina el subrayado predeterminado */
+  color: #000; /* Color de texto deseado */
+}
+.link-content {
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  margin: auto; /* Centra horizontalmente */
+}
+
+.link-content span {
+  margin-left: 8px; /* Espacio entre el icono y el texto */
+}
+
 .logo {
   display: flex;
   height: 5rem;

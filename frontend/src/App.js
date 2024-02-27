@@ -1,9 +1,9 @@
 //import logo es el logo de react ya venia cuando se creó el proyecto
 //import logo from './logo.svg';
 import './App.css';
-import MainDash from './components/MainDash/MainDash';
+import CustomerReview from './components/CustomerReview/CustomerReview';
 import RightSide from './components/RigtSide/RightSide';
-import Sidebar from './components/Sidebar';
+import Sidebar from './components/Sidebar1';
 
 /*
 function App() {
@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <div className="AppGlass">
         <Sidebar/>
-        <MainDash/>
+        <CustomerReview/>
         <RightSide/>
       </div>
     </div>

@@ -23,32 +23,32 @@ export const SidebarData = [
     heading: "Panel",
     Path: '/',
   },
-   {
-     icon: UilClipboardAlt,
-   heading: "Orders",
-   Path: '/estadisticas',
- },
- {
-   icon: UilUsersAlt,
-   heading: "Customers",
-   Path: '/',
- },
- {
-   icon: UilPackage,
-   heading: 'Products',
-   Path: '/estadisticas',
- },
   {
     icon: UilChart,
     heading: "Estadisticas",
     Path: '/estadisticas',
-  }
+  },
+//    {
+//      icon: UilClipboardAlt,
+//    heading: "Orders",
+//    Path: '/estadisticas',
+//  },
+ {
+   icon: UilUsersAlt,
+   heading: "Evaluaciones",
+   Path: '/',
+ },
+ {
+   icon: UilPackage,
+   heading: 'Ayuda',
+   Path: '/estadisticas',
+ }
 ];
 
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "Calidad",
+    title: "GA",
     color: {
       backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
@@ -69,7 +69,7 @@ export const cardsData = [
     ],
   },
   {
-    title: "Adherencia",
+    title: "BT",
     color: {
       backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
       boxShadow: "0px 10px 20px 0px #FDC0C7",
@@ -92,7 +92,7 @@ export const cardsData = [
     ],
   },
   {
-    title: "AHT",
+    title: "L2",
     color: {
       backGround:
         "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
@@ -112,6 +112,69 @@ export const cardsData = [
     },
     ],
   },
+  {
+    title: "Nómina",
+    color: {
+      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 93.4,
+    value: "93",
+    png: UilClipboardAlt,
+    //png: UilUsdSquare,
+    series: [
+      {
+        name: "México",
+        data: [78, 80, 28, 51, 80, 67, 98],
+      },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+      }
+    ],
+  },
+  {
+    title: "Personales",
+    color: {
+      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 93.4,
+    value: "93",
+    png: UilClipboardAlt,
+    //png: UilUsdSquare,
+    series: [
+      {
+        name: "México",
+        data: [78, 80, 28, 51, 80, 67, 98],
+      },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+      }
+    ],
+  },
+  {
+    title: "Seguros",
+    color: {
+      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #e0c6f5",
+    },
+    barValue: 93.4,
+    value: "93",
+    png: UilClipboardAlt,
+    //png: UilUsdSquare,
+    series: [
+      {
+        name: "México",
+        data: [78, 80, 28, 51, 80, 67, 98],
+      },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+      }
+    ],
+  }
 ];
 
 //AQUI PONEMOS EL MENSAJE DEL ROBOT :3 

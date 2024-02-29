@@ -4,6 +4,7 @@ import './App.css';
 import CustomerReview from '../components/CustomerReview/CustomerReview';
 import RightSide from '../components/RigtSide/RightSide';
 import Sidebar from '../components/Sidebar1';
+import Cards from '../components/Cards/Cards';
 
 /*
 function App() {
@@ -32,9 +33,11 @@ export default App;
 
 function App() {
   return (
-
+        <>
+        <h1> </h1>
+        <Cards/>
         <CustomerReview/>
-   
+        </>
   );
 }
 

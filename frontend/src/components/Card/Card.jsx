@@ -45,7 +45,7 @@ function CompactCard({ param, setExpanded }) {
         <Png />
         {/* antes de param.value puedes poner cualquier texto para que aparezca la información*/}
          <span>{param.value}</span> 
-        <span>Último trimestre</span>
+        <span>Último mes</span>
       </div>
     </motion.div>
   );

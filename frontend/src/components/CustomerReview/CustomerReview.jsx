@@ -1,63 +1,87 @@
 import React from "react";
 import Chart from "react-apexcharts";
 
+// Función para generar series de datos diarios
+const generateDayWiseTimeSeries = (baseDate, count, yrange) => {
+  let i = 0;
+  let series = [];
+  while (i < count) {
+    const x = baseDate;
+    const y =
+      Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
-const CustomerReview = () => {
-  const data = {
-    series: [
-      {
-        name: "Review",
-        data: [10, 50, 30, 90, 40, 120, 100],
-      },
-    ],
-    options: {
-      chart: {
-        type: "area",
-        height: "auto",
-      },
-
-      fill: {
-        colors: ["#fff"],
-        type: "gradient",
-      },
-      dataLabels: {
-        enabled: false,
-      },
-      stroke: {
-        curve: "smooth",
-        colors: ["#ff929f"],
-      },
-      tooltip: {
-        x: {
-          format: "dd/MM/yy HH:mm",
-        },
-      },
-      grid: {
-        show: false,
-      },
-      xaxis: {
-        type: "datetime",
-        categories: [
-          "2018-09-19T00:00:00.000Z",
-          "2018-09-19T01:30:00.000Z",
-          "2018-09-19T02:30:00.000Z",
-          "2018-09-19T03:30:00.000Z",
-          "2018-09-19T04:30:00.000Z",
-          "2018-09-19T05:30:00.000Z",
-          "2018-09-19T06:30:00.000Z",
-        ],
-      },
-      yaxis: {
-        show: false
-      },
-      toolbar:{
-        show: false
-      }
-    },
-  };
-  return <div className="CustomerReview">
-        <Chart options={data.options} series={data.series} type="area" />
-  </div>;
+    series.push([x, y]);
+    baseDate += 86400000; // 1 día en milisegundos
+    i++;
+  }
+  return series;
 };
 
-export default CustomerReview;
+// Configuración de datos para el gráfico
+const CustomerReview = {
+  series: [
+    {
+      name: 'Sur',
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
+    },
+    {
+      name: 'Norte',
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 20,
+      }),
+    },
+    {
+      name: 'Central',
+      data: generateDayWiseTimeSeries(new Date('11 Feb 2017 GMT').getTime(), 20, {
+        min: 10,
+        max: 15,
+      }),
+    },
+  ],
+  chart: {
+    type: 'area',
+    height: 350,
+    stacked: true,
+    events: {
+      selection: function (chart, e) {
+        console.log(new Date(e.xaxis.min));
+      },
+    },
+  },
+  colors: ['#008FFB', '#00E396', '#CED4DC'],
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: 'smooth',
+  },
+  fill: {
+    type: 'gradient',
+    gradient: {
+      opacityFrom: 0.6,
+      opacityTo: 0.8,
+    },
+  },
+  legend: {
+    position: 'top',
+    horizontalAlign: 'left',
+  },
+  xaxis: {
+    type: 'datetime',
+  },
+};
+
+// Componente funcional para el gráfico
+const ChartComponent = () => {
+  return (
+    <div id="chart">
+      <Chart options={CustomerReview} series={CustomerReview.series} type="area" height={350} />
+    </div>
+  );
+};
+
+export default ChartComponent;

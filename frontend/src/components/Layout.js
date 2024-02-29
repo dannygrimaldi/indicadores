@@ -1,6 +1,8 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import RightSide from './RigtSide/RightSide';
+import Cards from './Cards/Cards'
+import CustomerReview from './CustomerReview/CustomerReview'
 
 
 const Layout = ({ children }) => {
@@ -9,8 +11,16 @@ const Layout = ({ children }) => {
             <div className="App">
                 <div className="AppGlass">
                     <Sidebar />
-                    { children }
-                    <RightSide />
+                    <div>
+                        <h1> </h1>
+                    {/* <Cards />         */}
+                    
+                    <h1></h1>   
+                           
+                    { children } 
+                    </div>
+                    
+                    {/* <RightSide /> */}
                 </div>
             </div>
         </>

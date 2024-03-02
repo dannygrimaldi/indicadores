@@ -52,6 +52,7 @@ export const cardsData = [
     color: {
       backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
+
     },
     barValue: 93.4,
     value: "93",
@@ -71,8 +72,10 @@ export const cardsData = [
   {
     title: "BT",
     color: {
-      backGround: "linear-gradient(180deg, #FF919D 0%, #FC929D 100%)",
-      boxShadow: "0px 10px 20px 0px #FDC0C7",
+      backGround: "linear-gradient(137deg, rgba(232,230,230,1) 85%, rgba(221,2,2,1) 100%)",
+      boxShadow: "0px 10px 20px 0px Green",
+      stroke: "black"
+      
     },
     //Aquí se cambia el valor de la ruedita de la gráfica
     barValue: 87.2,

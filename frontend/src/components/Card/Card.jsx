@@ -24,7 +24,6 @@ const Card = (props) => {
 // Compact Card
 function CompactCard({ param, setExpanded }) {
   const Png = param.png;
-  const progressBarColor = param.title === "GA" ? "#FF5733" : "#3498db"; // Cambia los colores según tu preferencia
 
   return (
     <motion.div
@@ -40,16 +39,23 @@ function CompactCard({ param, setExpanded }) {
         <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
-          styles={{
-            stroke: { stroke: progressBarColor },
-          }}
-        />
+        >
+          {/* Aquí puedes aplicar estilos específicos al CircularProgressbar-path */}
+          <CircularProgressbar.path
+            className="CustomCircularProgressbar-path"
+            styles={{              
+                stroke: '#20fb00',
+              
+            }}
+          />
+        </CircularProgressbar>
+
         <span>{param.title}</span>
       </div>
       <div className="detail">
         <Png />
         {/* antes de param.value puedes poner cualquier texto para que aparezca la información*/}
-         <span>{param.value}</span> 
+        <span>{param.value}</span>
         <span>Último mes</span>
       </div>
     </motion.div>
@@ -122,7 +128,7 @@ function ExpandedCard({ param, setExpanded }) {
       <div style={{ alignSelf: "flex-end", cursor: "pointer", color: "white" }}>
         <UilTimes onClick={setExpanded} />
       </div>
-        <span>{param.title}</span>
+      <span>{param.title}</span>
       <div className="chartContainer">
         <Chart options={data.options} series={param.series} type="area" />
       </div>

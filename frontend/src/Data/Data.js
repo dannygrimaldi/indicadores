@@ -48,9 +48,30 @@ export const SidebarData = [
 // Analytics Cards Data
 export const cardsData = [
   {
-    title: "GA",
+    title: "TDC NTB",
     color: {
-      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      backGround: "linear-gradient(180deg, #6686A0, #6686A0)", //Aquí se cambia el COLOR de fondo  #3498db , #2980b9
+      boxShadow: "0px 10px 20px 0px #e0c6f5", //original
+    },
+    barValue: 93.4,
+    value: "93",
+    png: UilClipboardAlt,
+    //png: UilUsdSquare,
+    series: [
+      {
+        name: "México",
+        data: [78, 80, 28, 51, 80, 67, 98],
+      },
+      {
+        name: "Guadalajara",
+        data: [92, 87, 40, 89, 75, 56, 78],
+      }
+    ],
+  },
+  {
+    title: "TDC ETB",
+    color: {
+      backGround: "linear-gradient(180deg, #6686A0, #6686A0)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
 
     },
@@ -72,10 +93,8 @@ export const cardsData = [
   {
     title: "BT",
     color: {
-      backGround: "linear-gradient(137deg, rgba(232,230,230,1) 85%, rgba(221,2,2,1) 100%)",
-      boxShadow: "0px 10px 20px 0px Green",
-      stroke: "black"
-      
+      backGround: "linear-gradient(180deg, #ECD161, #ECD161)",
+      boxShadow: "0px 10px 20px 0px #FDC0C7",
     },
     //Aquí se cambia el valor de la ruedita de la gráfica
     barValue: 87.2,
@@ -98,7 +117,7 @@ export const cardsData = [
     title: "L2",
     color: {
       backGround:
-        "linear-gradient(rgb(248, 212, 154) -146.42%, rgb(255 202 113) -46.42%)",
+        "linear-gradient(180deg, #ECD161, #ECD161)",
       boxShadow: "0px 10px 20px 0px #F9D59B",
     },
     barValue: 93,
@@ -118,7 +137,7 @@ export const cardsData = [
   {
     title: "Nómina",
     color: {
-      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      backGround: "linear-gradient(180deg, #ECD161, #ECD161)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 93.4,
@@ -139,7 +158,7 @@ export const cardsData = [
   {
     title: "Personales",
     color: {
-      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      backGround: "linear-gradient(180deg, #ECD161, #ECD161)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 93.4,
@@ -160,7 +179,7 @@ export const cardsData = [
   {
     title: "Seguros",
     color: {
-      backGround: "linear-gradient(180deg, #3498db, #2980b9)", //Aquí se cambia el COLOR de fondo
+      backGround: "linear-gradient(180deg, #CBC970, #807F46)", //Aquí se cambia el COLOR de fondo
       boxShadow: "0px 10px 20px 0px #e0c6f5",
     },
     barValue: 93.4,

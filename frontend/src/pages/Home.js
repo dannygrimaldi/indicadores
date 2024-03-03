@@ -6,6 +6,9 @@ import RightSide from '../components/RigtSide/RightSide';
 import Sidebar from '../components/Sidebar1';
 import Cards from '../components/Cards/Cards';
 
+import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+
+
 /*
 function App() {
   return (
@@ -33,11 +36,17 @@ export default App;
 
 function App() {
   return (
-        <>
-        <h1> </h1>
-        <Cards/>
-        <CustomerReview/>
-        </>
+    <>
+      <h1> </h1>
+      <div style={{
+        marginBottom: '20px',
+        marginTop: '40px'
+      }}> {/* Aplica un margen inferior de 20px */}
+      
+        <Cards />
+      </div>
+      <CustomerReview />
+    </>
   );
 }
 

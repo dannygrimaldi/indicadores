@@ -50,20 +50,20 @@ export const cardsData = [
   {
     title: "TDC NTB",
     color: {
-      backGround: "linear-gradient(180deg, #6686A0, #6686A0)", //Aquí se cambia el COLOR de fondo  #3498db , #2980b9
-      boxShadow: "0px 10px 20px 0px #e0c6f5", //original
+      backGround: "linear-gradient(25deg, #5D9438, #BFFF94)", //Aquí se cambia el COLOR de fondo  #3498db , #2980b9
+      boxShadow: "0px 10px 20px 0px #DCFFC0", //original
     },
     barValue: 93.4,
-    value: "93",
+    value: "93%",
     png: UilClipboardAlt,
     //png: UilUsdSquare,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [78, 80, 28, 51, 80, 67, 98],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],
@@ -71,21 +71,21 @@ export const cardsData = [
   {
     title: "TDC ETB",
     color: {
-      backGround: "linear-gradient(180deg, #6686A0, #6686A0)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      backGround: "linear-gradient(25deg, #5D9438, #BFFF94)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #DCFFC0",
 
     },
     barValue: 93.4,
-    value: "93",
+    value: "93%",
     png: UilClipboardAlt,
     //png: UilUsdSquare,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [78, 80, 28, 51, 80, 67, 98],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],
@@ -93,22 +93,22 @@ export const cardsData = [
   {
     title: "BT",
     color: {
-      backGround: "linear-gradient(180deg, #ECD161, #ECD161)",
-      boxShadow: "0px 10px 20px 0px #FDC0C7",
+      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)",
+      boxShadow: "0px 10px 20px 0px #FFE0E6",
     },
     //Aquí se cambia el valor de la ruedita de la gráfica
     barValue: 87.2,
     //Aquí se cambia el valor que aparece en cada carta :3 
-    value: "87",
+    value: "87%",
     png: UilClipboardAlt,
     //png: UilMoneyWithdrawal,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [10, 100, 50, 70, 80, 30, 40],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       },
     ],
@@ -117,19 +117,19 @@ export const cardsData = [
     title: "L2",
     color: {
       backGround:
-        "linear-gradient(180deg, #ECD161, #ECD161)",
-      boxShadow: "0px 10px 20px 0px #F9D59B",
+        "linear-gradient(25deg, #E76E84, #EBA0AD)",
+      boxShadow: "0px 10px 20px 0px #FFE0E6",
     },
     barValue: 93,
-    value: "327 s",
+    value: "93%",
     png: UilClipboardAlt,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [10, 25, 15, 30, 12, 15, 20],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
     },
     ],
@@ -137,20 +137,20 @@ export const cardsData = [
   {
     title: "Nómina",
     color: {
-      backGround: "linear-gradient(180deg, #ECD161, #ECD161)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #FFE0E6",
     },
     barValue: 93.4,
-    value: "93",
+    value: "93%",
     png: UilClipboardAlt,
     //png: UilUsdSquare,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [78, 80, 28, 51, 80, 67, 98],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],
@@ -158,20 +158,20 @@ export const cardsData = [
   {
     title: "Personales",
     color: {
-      backGround: "linear-gradient(180deg, #ECD161, #ECD161)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #FFE0E6",
     },
     barValue: 93.4,
-    value: "93",
+    value: "93%",
     png: UilClipboardAlt,
     //png: UilUsdSquare,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [78, 80, 28, 51, 80, 67, 98],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],
@@ -179,20 +179,20 @@ export const cardsData = [
   {
     title: "Seguros",
     color: {
-      backGround: "linear-gradient(180deg, #CBC970, #807F46)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #e0c6f5",
+      backGround: "linear-gradient(25deg, #469CBE, #7EC3DE)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #CEF0FE",
     },
     barValue: 93.4,
-    value: "93",
+    value: "93%",
     png: UilClipboardAlt,
     //png: UilUsdSquare,
     series: [
       {
-        name: "México",
+        name: "Meta",
         data: [78, 80, 28, 51, 80, 67, 98],
       },
       {
-        name: "Guadalajara",
+        name: "Avance",
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],

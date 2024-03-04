@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Card.css";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import { motion, AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
 import { UilTimes } from "@iconscout/react-unicons";
 import Chart from "react-apexcharts";
 
@@ -11,13 +11,13 @@ import Chart from "react-apexcharts";
 const Card = (props) => {
   const [expanded, setExpanded] = useState(false);
   return (
-    <AnimateSharedLayout>
+    <motion.div >
       {expanded ? (
         <ExpandedCard param={props} setExpanded={() => setExpanded(false)} />
       ) : (
         <CompactCard param={props} setExpanded={() => setExpanded(true)} />
       )}
-    </AnimateSharedLayout>
+    </motion.div>
   );
 };
 
@@ -26,30 +26,19 @@ function CompactCard({ param, setExpanded }) {
   const Png = param.png;
 
   return (
-    <motion.div
+    <div
       className="CompactCard"
       style={{
         background: param.color.backGround,
         boxShadow: param.color.boxShadow,
       }}
-      layoutId="expandableCard"
       onClick={setExpanded}
     >
       <div className="radialBar">
         <CircularProgressbar
           value={param.barValue}
           text={`${param.barValue}%`}
-        >
-          {/* Aquí puedes aplicar estilos específicos al CircularProgressbar-path */}
-          <CircularProgressbar.path
-            className="CustomCircularProgressbar-path"
-            styles={{              
-                stroke: '#20fb00',
-              
-            }}
-          />
-        </CircularProgressbar>
-
+        />
         <span>{param.title}</span>
       </div>
       <div className="detail">
@@ -58,7 +47,7 @@ function CompactCard({ param, setExpanded }) {
         <span>{param.value}</span>
         <span>Último mes</span>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

@@ -11,7 +11,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
-
+import Diaria from './pages/EstDiaria'
+import { cardsData as diariaData } from './Data/DataDiaria';
 
 
 function App() {
@@ -22,7 +23,8 @@ function App() {
             <Layout>
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    <Route path='/estadisticas' element={<Dashboard />} />
+                    <Route path='/estadisticas' element={<Diaria data={diariaData} />} />
+                    <Route path='/e' element={<Dashboard />} />
                 </Routes>
             </Layout>
             {/* 

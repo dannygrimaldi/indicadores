@@ -16,35 +16,6 @@ import { keyboard } from "@testing-library/user-event/dist/keyboard";
 //import img1 from "../imgs/img1.png";
 import robot from "../imgs/robot.svg";
 
-// Sidebar Data
-export const SidebarData = [
-  {
-    icon: UilChart,
-    heading: "Estadisticas Mensuales",
-    Path: '/',
-  },
-  {
-    icon: UilChart,
-    heading: "Estadisticas Diarias",
-    Path: '/estadisticas',
-  },
-//    {
-//      icon: UilClipboardAlt,
-//    heading: "Orders",
-//    Path: '/estadisticas',
-//  },
- {
-   icon: UilUsersAlt,
-   heading: "Evaluaciones",
-   Path: '/',
- },
- {
-   icon: UilPackage,
-   heading: 'Ayuda',
-   Path: '/estadisticas',
- }
-];
-
 // Analytics Cards Data
 export const cardsData = [
   {
@@ -196,9 +167,9 @@ export const cardsData = [
         data: [92, 87, 40, 89, 75, 56, 78],
       }
     ],
+  
   }
 ];
-
 
 export const datax = {
   options: {
@@ -251,7 +222,6 @@ export const datax = {
   },
 
 };
-
 //AQUI PONEMOS EL MENSAJE DEL ROBOT :3 
 export const UpdatesData = [
   {

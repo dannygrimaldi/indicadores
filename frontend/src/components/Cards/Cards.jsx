@@ -1,13 +1,11 @@
 import React from "react";
 import "./Cards.css";
-import { cardsData } from "../../Data/Data";
 import Card from "../Card/Card";
 
-
-const Cards = () => {
+const Cards = ({ data, uniqueData }) => {
   return (
     <div className="Cards">
-      {cardsData.map((card, id) => {
+      {data.map((card, id) => {
         return (
           <div className="parentContainer" key={id}>
             <Card
@@ -18,6 +16,7 @@ const Cards = () => {
               png={card.png}
               series={card.series}
               series2={card.series}
+              uniqueData={uniqueData} // Pasando la prop data a Card
             />
           </div>
         );

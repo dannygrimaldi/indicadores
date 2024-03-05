@@ -2,7 +2,7 @@
 .CompactCard {
   display: flex;
   flex: 1;
-  height: 6rem !important;
+  height: 7rem !important;
   min-width: 8rem;
   border-radius: 0.7rem;
   /* Color de fuente para las tarjetas sin expandir */
@@ -25,7 +25,7 @@
   gap: 1rem;
 }
 .CircularProgressbar {
-  width: 2.6rem !important;
+  width: 3.4rem !important;
   overflow: visible;
 } 
 .CircularProgressbar-path {

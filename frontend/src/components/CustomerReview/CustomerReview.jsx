@@ -20,21 +20,27 @@ class ChartTabs extends React.Component {
       {
         label: "Agencia",
         series: [{
-          name: 'Lead', // Nombre de la serie
+          name: 'Lead', // Nombre de la serie amarillo
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
-          color: '#ED6335'
+          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          color: '#347893'
 
-        }, {
+        },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
-          color: '#739F56'
+          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          color: '#28B67A'
+
         }, {
           name: 'Avance', // Nombre de la serie
+          type: 'column', // Tipo de gráfico (columna)
+          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          color: '#FDC530'
+        }, {
+          name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
           data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
-          color: '#2D6980'
+          color: '#F14E73'
         }],
         options: {
           chart: {
@@ -46,7 +52,7 @@ class ChartTabs extends React.Component {
             enabled: false // Etiquetas de datos desactivadas
           },
           stroke: {
-            width: [1, 1, 4] // Ancho de las líneas
+            width: [1, 1, 5] // Ancho de las líneas
           },
           title: {
             text: 'Grafica aculado por Agencia', // Título del gráfico
@@ -63,17 +69,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#ED6335'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#ED6335',
+                  colors: '#28B67A',
                 }
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#ED6335',
+                  color: '#28B67A',
                 }
               },
               tooltip: {
@@ -81,46 +87,68 @@ class ChartTabs extends React.Component {
               }
             },
             {
-              seriesName: 'Lead',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#739F56'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#739F56',
+                  colors: '#347893',
                 }
               },
               title: {
                 text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#739F56',
+                  color: '#347893',
                 }
               },
             },
             {
-              seriesName: 'Avance',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#2D6980'
+                color: '#FDC530'
               },
               labels: {
                 style: {
-                  colors: '#2D6980',
+                  colors: '#FDC530',
+                }
+              },
+              title: {
+                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                style: {
+                  color: '#FDC530',
+                }
+              },
+            },
+            {
+              seriesName: 'Porcentaje de Avance',
+              opposite: true,
+              axisTicks: {
+                show: true,
+              },
+              axisBorder: {
+                show: true,
+                color: '#F14E73'
+              },
+              labels: {
+                style: {
+                  colors: '#F14E73',
                 },
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#2D6980',
+                  color: '#F14E73',
                 }
               }
             },
@@ -144,19 +172,25 @@ class ChartTabs extends React.Component {
         series: [{
           name: 'Lead', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
-          color: '#ED6335'
+          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          color: '#347893'
 
-        }, {
+        },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
-          color: '#739F56'
+          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          color: '#28B67A'
+
         }, {
           name: 'Avance', // Nombre de la serie
+          type: 'column', // Tipo de gráfico (columna)
+          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          color: '#FDC530'
+        }, {
+          name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
           data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
-          color: '#2D6980'
+          color: '#F14E73'
         }],
         options: {
           chart: {
@@ -168,10 +202,10 @@ class ChartTabs extends React.Component {
             enabled: false // Etiquetas de datos desactivadas
           },
           stroke: {
-            width: [1, 1, 4] // Ancho de las líneas
+            width: [1, 1, 5] // Ancho de las líneas
           },
           title: {
-            text: 'Grafica Concentrado por Producto', // Título del gráfico
+            text: 'Grafica aculado por Agencia', // Título del gráfico
             align: 'left', // Alineación del título
             offsetX: 110 // Desplazamiento horizontal del título
           },
@@ -185,17 +219,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#ED6335'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#ED6335',
+                  colors: '#28B67A',
                 }
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#ED6335',
+                  color: '#28B67A',
                 }
               },
               tooltip: {
@@ -203,46 +237,68 @@ class ChartTabs extends React.Component {
               }
             },
             {
-              seriesName: 'Lead',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#739F56'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#739F56',
+                  colors: '#347893',
                 }
               },
               title: {
                 text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#739F56',
+                  color: '#347893',
                 }
               },
             },
             {
-              seriesName: 'Avance',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#2D6980'
+                color: '#FDC530'
               },
               labels: {
                 style: {
-                  colors: '#2D6980',
+                  colors: '#FDC530',
+                }
+              },
+              title: {
+                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                style: {
+                  color: '#FDC530',
+                }
+              },
+            },
+            {
+              seriesName: 'Porcentaje de Avance',
+              opposite: true,
+              axisTicks: {
+                show: true,
+              },
+              axisBorder: {
+                show: true,
+                color: '#F14E73'
+              },
+              labels: {
+                style: {
+                  colors: '#F14E73',
                 },
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#2D6980',
+                  color: '#F14E73',
                 }
               }
             },
@@ -266,19 +322,25 @@ class ChartTabs extends React.Component {
         series: [{
           name: 'Lead', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
-          color: '#ED6335'
+          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          color: '#347893'
 
-        }, {
+        },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
-          color: '#739F56'
+          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          color: '#28B67A'
+
         }, {
           name: 'Avance', // Nombre de la serie
+          type: 'column', // Tipo de gráfico (columna)
+          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          color: '#FDC530'
+        }, {
+          name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
           data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
-          color: '#2D6980'
+          color: '#F14E73'
         }],
         options: {
           chart: {
@@ -290,10 +352,10 @@ class ChartTabs extends React.Component {
             enabled: false // Etiquetas de datos desactivadas
           },
           stroke: {
-            width: [1, 1, 4] // Ancho de las líneas
+            width: [1, 1, 5] // Ancho de las líneas
           },
           title: {
-            text: 'XYZ - Análisis de Stock (2009 - 2016)', // Título del gráfico
+            text: 'Grafica aculado por Agencia', // Título del gráfico
             align: 'left', // Alineación del título
             offsetX: 110 // Desplazamiento horizontal del título
           },
@@ -307,17 +369,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#ED6335'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#ED6335',
+                  colors: '#28B67A',
                 }
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#ED6335',
+                  color: '#28B67A',
                 }
               },
               tooltip: {
@@ -325,46 +387,68 @@ class ChartTabs extends React.Component {
               }
             },
             {
-              seriesName: 'Lead',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#739F56'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#739F56',
+                  colors: '#347893',
                 }
               },
               title: {
                 text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#739F56',
+                  color: '#347893',
                 }
               },
             },
             {
-              seriesName: 'Avance',
+              seriesName: 'Meta',
               opposite: true,
               axisTicks: {
                 show: true,
               },
               axisBorder: {
                 show: true,
-                color: '#2D6980'
+                color: '#FDC530'
               },
               labels: {
                 style: {
-                  colors: '#2D6980',
+                  colors: '#FDC530',
+                }
+              },
+              title: {
+                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                style: {
+                  color: '#FDC530',
+                }
+              },
+            },
+            {
+              seriesName: 'Porcentaje de Avance',
+              opposite: true,
+              axisTicks: {
+                show: true,
+              },
+              axisBorder: {
+                show: true,
+                color: '#F14E73'
+              },
+              labels: {
+                style: {
+                  colors: '#F14E73',
                 },
               },
               title: {
                 text: "Ingresos (miles de millones)", // Título del eje Y
                 style: {
-                  color: '#2D6980',
+                  color: '#F14E73',
                 }
               }
             },

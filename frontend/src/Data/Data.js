@@ -50,8 +50,8 @@ export const cardsData = [
   {
     title: "TDC NTB",
     color: {
-      backGround: "linear-gradient(25deg, #5D9438, #BFFF94)", //Aquí se cambia el COLOR de fondo  #3498db , #2980b9
-      boxShadow: "0px 10px 20px 0px #DCFFC0", //original
+      backGround: "linear-gradient(25deg, #00847F, #70A7A6)", //Aquí se cambia el COLOR de fondo  #3498db , #2980b9
+      boxShadow: "0px 10px 20px 0px #CAFCFB", //original
     },
     barValue: 93.4,
     value: "93%",
@@ -60,19 +60,19 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [78, 80, 28, 51, 80, 67, 98],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 90],
       }
     ],
   },
   {
     title: "TDC ETB",
     color: {
-      backGround: "linear-gradient(25deg, #5D9438, #BFFF94)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #DCFFC0",
+      backGround: "linear-gradient(25deg, #00847F, #70A7A6)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #CAFCFB",
 
     },
     barValue: 93.4,
@@ -82,19 +82,19 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [78, 80, 28, 51, 80, 67, 98],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [ 89, 75, 56],
       }
     ],
   },
   {
     title: "BT",
     color: {
-      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)",
-      boxShadow: "0px 10px 20px 0px #FFE0E6",
+      backGround: "linear-gradient(25deg, #FFBB33, #FFD480)",
+      boxShadow: "0px 10px 20px 0px #FCEAC9",
     },
     //Aquí se cambia el valor de la ruedita de la gráfica
     barValue: 87.2,
@@ -105,11 +105,11 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [10, 100, 50, 70, 80, 30, 40],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 40],
       },
     ],
   },
@@ -117,8 +117,8 @@ export const cardsData = [
     title: "L2",
     color: {
       backGround:
-        "linear-gradient(25deg, #E76E84, #EBA0AD)",
-      boxShadow: "0px 10px 20px 0px #FFE0E6",
+        "linear-gradient(25deg, #FFBB33, #FFD480)",
+      boxShadow: "0px 10px 20px 0px #FCEAC9",
     },
     barValue: 93,
     value: "93%",
@@ -126,19 +126,19 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [10, 25, 15, 30, 12, 15, 20],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 40],
     },
     ],
   },
   {
     title: "Nómina",
     color: {
-      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #FFE0E6",
+      backGround: "linear-gradient(25deg, #FFBB33, #FFD480)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #FCEAC9",
     },
     barValue: 93.4,
     value: "93%",
@@ -147,19 +147,19 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [78, 80, 28, 51, 80, 67, 98],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 40],
       }
     ],
   },
   {
     title: "Personales",
     color: {
-      backGround: "linear-gradient(25deg, #E76E84, #EBA0AD)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #FFE0E6",
+      backGround: "linear-gradient(25deg, #FFBB33, #FFD480)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #FCEAC9",
     },
     barValue: 93.4,
     value: "93%",
@@ -168,19 +168,19 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [78, 80, 28, 51, 80, 67, 98],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 40],
       }
     ],
   },
   {
     title: "Seguros",
     color: {
-      backGround: "linear-gradient(25deg, #469CBE, #7EC3DE)", //Aquí se cambia el COLOR de fondo
-      boxShadow: "0px 10px 20px 0px #CEF0FE",
+      backGround: "linear-gradient(25deg, #305A85, #3E5E7D)", //Aquí se cambia el COLOR de fondo
+      boxShadow: "0px 10px 20px 0px #CAE3FC",
     },
     barValue: 93.4,
     value: "93%",
@@ -189,11 +189,11 @@ export const cardsData = [
     series: [
       {
         name: "Meta",
-        data: [78, 80, 28, 51, 80, 67, 98],
+        data: [98, 80, 95, 99, 89, 87, 98, 99, 89, 87, 98,88, 89, 95],
       },
       {
         name: "Avance",
-        data: [92, 87, 40, 89, 75, 56, 78],
+        data: [92, 87, 40],
       }
     ],
   }
@@ -230,7 +230,7 @@ export const datax = {
     },
     tooltip: {
       x: {
-        format: "dd/MM/yy HH:mm",
+        format: "yyyy-MM-dd HH:mm",
       },
     },
     grid: {
@@ -239,13 +239,20 @@ export const datax = {
     xaxis: {
       type: "datetime",
       categories: [
-        "2018-09-19T00:00:00.000Z",
-        "2018-09-19T01:30:00.000Z",
-        "2018-09-19T02:30:00.000Z",
-        "2018-09-19T03:30:00.000Z",
-        "2018-09-19T04:30:00.000Z",
-        "2018-09-19T05:30:00.000Z",
-        "2018-09-19T06:30:00.000Z",
+        "2023-12-19T00:00:00.000Z",
+        "2024-01-19T01:30:00.000Z",
+        "2024-02-19T01:30:00.000Z",
+        "2024-03-19T02:30:00.000Z",
+        "2024-04-19T03:30:00.000Z",
+        "2024-05-19T04:30:00.000Z",
+        "2024-06-19T05:30:00.000Z",
+        "2024-07-19T06:30:00.000Z",
+        "2024-08-19T04:30:00.000Z",
+        "2024-09-19T05:30:00.000Z",
+        "2024-10-19T06:30:00.000Z",
+        "2024-11-19T04:30:00.000Z",
+        "2024-12-19T05:30:00.000Z",
+        "2025-01-19T06:30:00.000Z",
       ],
     },
   },

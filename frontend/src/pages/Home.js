@@ -18,6 +18,8 @@ function App() {
         overflowX: 'none',
         height: '98vh',
         width: '150vh',
+        overflow: 'auto'
+
       }} > 
       <div style={{
         marginBottom: '20px',
@@ -29,7 +31,7 @@ function App() {
       <CustomerReview />
       <div style={{
         overflowX: 'scroll',
-   
+        overflow: 'auto',
         width: '93rem', /*1640px  */
         marginBottom: '20px',
         marginTop: '40px',

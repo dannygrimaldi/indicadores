@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.8031bb8d.css",
-    "main.js": "/static/js/main.b84019db.js",
+    "main.js": "/static/js/main.e7500269.js",
     "static/media/robot.svg": "/static/media/robot.b975b8401c6a87df3b89c698e8d06a4f.svg",
     "static/media/logo_hsbc.svg": "/static/media/logo_hsbc.08279981d25e3a2a9d7dd139d4006b61.svg",
     "index.html": "/index.html",
     "main.8031bb8d.css.map": "/static/css/main.8031bb8d.css.map",
-    "main.b84019db.js.map": "/static/js/main.b84019db.js.map"
+    "main.e7500269.js.map": "/static/js/main.e7500269.js.map"
   },
   "entrypoints": [
     "static/css/main.8031bb8d.css",
-    "static/js/main.b84019db.js"
+    "static/js/main.e7500269.js"
   ]
 }

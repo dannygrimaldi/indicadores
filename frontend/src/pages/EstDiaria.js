@@ -15,6 +15,7 @@ function App() {
       <div style={{
         overflowY: 'scroll',
         height: '850px',
+        overflow: 'auto',
       }} > 
       <div style={{
         marginBottom: '20px',

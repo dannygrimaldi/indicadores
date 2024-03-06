@@ -28,6 +28,11 @@ export const SidebarData = [
     heading: "Estadisticas Diarias",
     Path: '/estadisticas',
   },
+  {
+    icon: UilChart,
+    heading: "Estadisticas en vivo",
+    Path: '/estadisticas',
+  },
 //    {
 //      icon: UilClipboardAlt,
 //    heading: "Orders",

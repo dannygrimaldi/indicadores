@@ -22,24 +22,24 @@ class ChartTabs extends React.Component {
         series: [{
           name: 'Lead', // Nombre de la serie amarillo
           type: 'column', // Tipo de gráfico (columna)
-          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          data: [24000, 25000, 32000, 36000, 42000, 34000, 30000, 28000], // Datos de la serie
           color: '#347893'
 
         },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          data: [14000, 20000, 25000, 30000, 32000, 33000, 34000, 38000], // Datos de la serie
           color: '#28B67A'
 
         }, {
           name: 'Avance', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          data: [15000, 21000, 26000, 31000, 33000, 25000, 23000, 20000], // Datos de la serie
           color: '#FDC530'
         }, {
           name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
-          data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
+          data:  [107.14,105.00,104.00,103.33,103.12,75.76,67.65,52.63],// Datos de la serie
           color: '#F14E73'
         }],
         options: {
@@ -69,17 +69,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#28B67A'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#28B67A',
+                  colors: '#347893',
                 }
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Miles", // Título del eje Y
                 style: {
-                  color: '#28B67A',
+                  color: '#347893',
                 }
               },
               tooltip: {
@@ -94,17 +94,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#347893'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#347893',
+                  colors: '#28B67A',
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
-                  color: '#347893',
+                  color: '#28B67A',
                 }
               },
             },
@@ -124,7 +124,7 @@ class ChartTabs extends React.Component {
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
                   color: '#FDC530',
                 }
@@ -146,7 +146,7 @@ class ChartTabs extends React.Component {
                 },
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Porcentaje", // Título del eje Y
                 style: {
                   color: '#F14E73',
                 }
@@ -170,26 +170,26 @@ class ChartTabs extends React.Component {
       {
         label: "Producto",
         series: [{
-          name: 'Lead', // Nombre de la serie
+          name: 'Lead', // Nombre de la serie amarillo
           type: 'column', // Tipo de gráfico (columna)
-          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          data: [24000, 20000, 18000, 15000, 15000, 18000, 18000, 46000], // Datos de la serie
           color: '#347893'
 
         },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          data: [14000, 20000, 25000, 15000, 25000, 28000, 18000, 46000], // Datos de la serie
           color: '#28B67A'
 
         }, {
           name: 'Avance', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          data: [15000, 21000, 22000, 14000, 23000, 22000, 13000, 41000], // Datos de la serie
           color: '#FDC530'
         }, {
           name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
-          data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
+          data:  [107.14,105.00,88.00,93.33,92.00,78.57,102.63,89.13],// Datos de la serie
           color: '#F14E73'
         }],
         options: {
@@ -219,17 +219,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#28B67A'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#28B67A',
+                  colors: '#347893',
                 }
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Miles", // Título del eje Y
                 style: {
-                  color: '#28B67A',
+                  color: '#347893',
                 }
               },
               tooltip: {
@@ -244,17 +244,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#347893'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#347893',
+                  colors: '#28B67A',
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
-                  color: '#347893',
+                  color: '#28B67A',
                 }
               },
             },
@@ -274,7 +274,7 @@ class ChartTabs extends React.Component {
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
                   color: '#FDC530',
                 }
@@ -296,7 +296,7 @@ class ChartTabs extends React.Component {
                 },
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Porcentaje", // Título del eje Y
                 style: {
                   color: '#F14E73',
                 }
@@ -320,26 +320,26 @@ class ChartTabs extends React.Component {
       {
         label: "Gerente",
         series: [{
-          name: 'Lead', // Nombre de la serie
+          name: 'Lead', // Nombre de la serie amarillo
           type: 'column', // Tipo de gráfico (columna)
-          data: [2.4, 2, 3.5, 4.5, 4.5, 1.8, 1.8, 2.6], // Datos de la serie
+          data: [24000, 20000, 18000, 15000, 15000, 18000, 18000, 46000], // Datos de la serie
           color: '#347893'
 
         },{
           name: 'Meta', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6], // Datos de la serie
+          data: [14000, 20000, 25000, 15000, 25000, 28000, 18000, 46000], // Datos de la serie
           color: '#28B67A'
 
         }, {
           name: 'Avance', // Nombre de la serie
           type: 'column', // Tipo de gráfico (columna)
-          data: [1.1, 3, 3.1, 4, 4.1, 4.9, 6.5, 8.5], // Datos de la serie
+          data: [15000, 21000, 22000, 14000, 23000, 22000, 13000, 41000], // Datos de la serie
           color: '#FDC530'
         }, {
           name: 'Porcentaje de Avance', // Nombre de la serie
           type: 'line', // Tipo de gráfico (línea)
-          data: [1000000, 956787, 1000000, 800000, 600000, 900000, 750000, 1350000],// Datos de la serie
+          data:  [107.14,105.00,88.00,93.33,92.00,78.57,102.63,89.13],// Datos de la serie
           color: '#F14E73'
         }],
         options: {
@@ -369,17 +369,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#28B67A'
+                color: '#347893'
               },
               labels: {
                 style: {
-                  colors: '#28B67A',
+                  colors: '#347893',
                 }
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Miles", // Título del eje Y
                 style: {
-                  color: '#28B67A',
+                  color: '#347893',
                 }
               },
               tooltip: {
@@ -394,17 +394,17 @@ class ChartTabs extends React.Component {
               },
               axisBorder: {
                 show: true,
-                color: '#347893'
+                color: '#28B67A'
               },
               labels: {
                 style: {
-                  colors: '#347893',
+                  colors: '#28B67A',
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
-                  color: '#347893',
+                  color: '#28B67A',
                 }
               },
             },
@@ -424,7 +424,7 @@ class ChartTabs extends React.Component {
                 }
               },
               title: {
-                text: "Flujo de Efectivo Operativo (miles de millones)", // Título del eje Y
+                text: "Millones de Pesos", // Título del eje Y
                 style: {
                   color: '#FDC530',
                 }
@@ -446,7 +446,7 @@ class ChartTabs extends React.Component {
                 },
               },
               title: {
-                text: "Ingresos (miles de millones)", // Título del eje Y
+                text: "Porcentaje", // Título del eje Y
                 style: {
                   color: '#F14E73',
                 }

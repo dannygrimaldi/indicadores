@@ -92,10 +92,10 @@ export default function BasicTable() {
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
         >
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
-            <TableHead>
+            <TableHead className="Headers">
               <TableRow>
                 <TableCell>TPSA</TableCell>
-                <TableCell align="left">Enero</TableCell>
+                <TableCell align="left" >Enero</TableCell>
 <TableCell align="left">Febrero</TableCell>
 <TableCell align="left">Marzo</TableCell>
 <TableCell align="left">Abril</TableCell>

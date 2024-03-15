@@ -5,7 +5,6 @@ import { cardsData as diariaCardsData } from "../Data/Data";
 import { datax } from "../Data/Data"; 
 import Table from '../components/Table/Table'
 import '../styles/index.css'
-import Card from '@nextui-org/react';
 
 
 function App() {
@@ -36,7 +35,7 @@ function App() {
         marginBottom: '20px',
         marginTop: '40px',
         }}>
-
+      
       <Table/>
       </div>
       </div>

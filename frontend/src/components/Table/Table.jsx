@@ -61,7 +61,7 @@ const makeStyle=(status)=>{
 
 */
 //Aqui cambias el color dependiento de lo que aparezca :3
-const makeStyle=(status)=>{
+/* const makeStyle=(status)=>{
   if(parseFloat(status) > 95)
   {
     return {
@@ -82,7 +82,27 @@ const makeStyle=(status)=>{
       color: 'gray',
     }
   }
-}
+} */
+
+
+const makeStyle = (row) => {
+  const values = Object.values(row).slice(1,-1).map(value => parseFloat(value.replace(/[^0-9.-]+/g,"")));
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+
+  return values.map(value => {
+    if (isNaN(value)) {
+      return { background: 'white', color: 'black' };
+    } else if (value === min) {
+      return { background: '#ffadad8f', color: 'red' };
+    } else if (value === max) {
+      return { background: 'rgb(145 254 159 / 47%)', color: 'green' };
+    } else {
+      return { background: '#FFF', color: 'gray' };
+    }
+  });
+};
+
 export default function BasicTable() {
   return (
       <div className="Table">
@@ -112,7 +132,7 @@ export default function BasicTable() {
               </TableRow>
             </TableHead>
             <TableBody style={{ color: "white" }}>
-              {rows.map((row) => (
+              {/* {rows.map((row) => (
                 <TableRow
                   key={row.name}
                   sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -133,7 +153,19 @@ export default function BasicTable() {
                   <TableCell align="left">{row.dato13}</TableCell>
 
                 </TableRow>
-              ))}
+              ))} */}
+              {rows.map((row) => (
+  <TableRow
+    key={row.name}
+    sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+  >
+    <TableCell component="th" scope="row">{row.name}</TableCell>
+    {Object.values(row).slice(1).map((value, index) => (
+      <TableCell align="left" style={makeStyle(row)[index]} key={index}>{value}</TableCell>
+    ))}
+  </TableRow>
+))}
+
             </TableBody>
           </Table>
         </TableContainer>

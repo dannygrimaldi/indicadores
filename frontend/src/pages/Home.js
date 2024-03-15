@@ -14,15 +14,16 @@ function App() {
 
       <div style={{
         overflowY: 'scroll',
-        overflowX: 'none',
-        height: '98vh',
-        width: '150vh',
-        overflow: 'auto'
+        overflow: 'auto',
+        overflowX: 'scroll',
+        height: '60rem',
+        width: '100%',
 
       }} > 
       <div style={{
         marginBottom: '20px',
         marginTop: '40px',
+     
         
       }}> 
       <Cards data={diariaCardsData} uniqueData={datax} />
@@ -30,8 +31,8 @@ function App() {
       <CustomerReview />
       <div style={{
         overflowX: 'scroll',
-        overflow: 'auto',
-        width: '93rem', /*1640px  */
+/*         overflow: 'auto',
+ */        width: '101rem', /*1640px  */
         marginBottom: '20px',
         marginTop: '40px',
         }}>

@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState }from "react";
 import ReactApexChart from "react-apexcharts";
-import {Tabs, Tab, Card, CardBody} from "@nextui-org/react";
+import {Tabs, Tab, TabList, TabPanel} from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import "./CustomerReview.css"
+
+
+
 
 
 class ApexChart extends React.Component {
@@ -13,8 +18,6 @@ class ApexChart extends React.Component {
   }
 }
 
-class ChartTabs extends React.Component {
-  render() {
     // Define los datos y opciones de gráficos para cada pestaña
     const tabs = [
       {
@@ -469,24 +472,37 @@ class ChartTabs extends React.Component {
       }
     ];
 
+
+
+    function BasicTabs() {
+      const [selectedTab, setSelectedTab] = useState(0);
+    
+      const handleTabSelect = (index) => {
+        setSelectedTab(index);
+      };
+
     return (
       <div className="flex w-full flex-col">
 
 
-      <Tabs aria-label="Dynamic tabs">
+      <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
+      <TabList>
         {tabs.map((tab, index) => (
-          <Tab key={index} title={tab.label}>
-            <Card>
-              <CardBody>
-               <ApexChart options={tab.options} series={tab.series} />
-              </CardBody>
-            </Card>  
-          </Tab>
+          <Tab key={index}>{tab.label}</Tab>
         ))}
-      </Tabs>
+      </TabList>
+      {tabs.map((tab, index) => (
+        <TabPanel key={index}>
+          {/* Aquí deberías renderizar tu gráfico para cada pestaña */}
+          <div style={{ height: tab.options.chart.height }}>
+          <ApexChart options={tab.options} series={tab.series} />          </div>
+        </TabPanel>
+      ))}
+    </Tabs>
         </div>
+
     );
-  }
+  
 }
 
-export default ChartTabs;
+export default BasicTabs;

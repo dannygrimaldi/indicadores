@@ -29,7 +29,7 @@ const Sidebar = () => {
       </div>
       <motion.div className='sidebar'
         variants={sidebarVariants}
-        animate={window.innerWidth <= 768 ? `${expanded}` : ''}
+        animate={window.innerWidth <= 500 ? `${expanded}` : ''}
       >
         {/* logo */}
         <Link to='/' className="link" >

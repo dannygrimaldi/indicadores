@@ -3,7 +3,6 @@ import CustomerReview from '../components/CustomerReview/CustomerReview';
 import Cards from '../components/Cards/Cards';
 import { cardsData as diariaCardsData } from "../Data/DataDiaria"; 
 import { datax } from "../Data/DataDiaria"; 
-import Table from '../components/Table/Table'
 
 
 

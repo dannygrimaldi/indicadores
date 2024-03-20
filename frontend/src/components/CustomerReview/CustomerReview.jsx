@@ -208,7 +208,7 @@ class ApexChart extends React.Component {
             width: [1, 1, 5] // Ancho de las líneas
           },
           title: {
-            text: 'Grafica aculado por Agencia', // Título del gráfico
+            text: 'Grafica aculado por Producto', // Título del gráfico
             align: 'left', // Alineación del título
             offsetX: 110 // Desplazamiento horizontal del título
           },
@@ -358,7 +358,7 @@ class ApexChart extends React.Component {
             width: [1, 1, 5] // Ancho de las líneas
           },
           title: {
-            text: 'Grafica aculado por Agencia', // Título del gráfico
+            text: 'Grafica aculado por Gerente', // Título del gráfico
             align: 'left', // Alineación del título
             offsetX: 110 // Desplazamiento horizontal del título
           },

@@ -2,5 +2,107 @@
     background-color: #FFF;
     padding: 20px;
     border-radius: 15px;
-    
 }
+.react-tabs__tab-list {
+    display: flex;
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en navegadores que lo soportan */
+    -ms-overflow-style: none; /* Oculta la barra de desplazamiento en Internet Explorer */
+    border-bottom: 1px solid #aa000067;
+}
+
+/* Oculta la barra de desplazamiento en navegadores basados en Webkit */
+.react-tabs__tab-list::-webkit-scrollbar {
+    display: none;
+}
+
+.react-tabs__tab {
+    background-color: #FFF;
+    border: none;
+    border-bottom: 2px solid transparent; /* Línea inferior transparente */
+    cursor: pointer;
+    margin-right: 10px; /* Ajusta el margen entre los botones */
+    padding: 10px 15px; /* Ajusta el relleno según sea necesario */
+    font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+    color: #333; /* Color del texto */
+    transition: border-bottom-color 0.3s ease; /* Animación para el cambio de color de la línea inferior */
+    position: relative; /* Agrega posición relativa para usar desplazamiento */
+    border-top: 7px;
+}
+
+/* Estilos para cuando se selecciona el Tab */
+.react-tabs__tab--selected {
+    border-bottom-color: #DB0011; /* Cambia este color por el que desees */
+    font-weight: bold; /* Opcional: hacer el texto en negrita cuando se selecciona */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+
+
+
+
+/* Animación para el desplazamiento de la sombra */
+@keyframes slideShadow {
+    from {
+        box-shadow: var(--shadow-start); /* Desde la sombra inicial */
+    }
+    to {
+        box-shadow: var(--shadow-end); /* Hasta la nueva sombra */
+    }
+}
+
+/* Aplica la animación solo cuando se selecciona un Tab */
+.react-tabs__tab--selected::after {
+    content: '';
+    position: absolute;
+    bottom: auto; /* Ajusta la posición inferior para que se superponga a la línea inferior */
+    left: 0;
+    width: 00%;
+    height: 2px;
+    background-color: #DB0011; /* Color de la línea inferior */
+    --current: 0;
+    --move: 0;
+    --shadow-start: none; /* Sombra inicial */
+    --shadow-end: none; /* Nueva sombra */
+    animation: slideIn 0.3s ease, slideShadow 0.3s ease; /* Aplica la animación */
+
+}
+
+/* Estilos adicionales para la animación */
+.react-tabs__tab--selected {
+    --current: 0; /* Establece la posición actual */
+    --shadow-start: none; /* Sombra inicial */
+    --shadow-end: none; /* Nueva sombra */
+}
+
+/* Calcula la distancia de desplazamiento */
+.react-tabs__tab--selected:nth-of-type(1)::after {
+    --move: 0; /* Desplazamiento para el primer ítem seleccionado */
+    --shadow-start: none; /* Sombra inicial para el primer ítem seleccionado */
+    --shadow-end: 0 2px 4px rgba(0, 0, 0, 0.4); /* Nueva sombra para el primer ítem seleccionado */
+}
+
+.react-tabs__tab--selected:nth-of-type(2)::after {
+    --move: 100%; /* Desplazamiento para el segundo ítem seleccionado */
+    --shadow-start: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra inicial para el segundo ítem seleccionado */
+    --shadow-end: none; /* Nueva sombra para el segundo ítem seleccionado */
+}
+
+/* Añade más reglas para cada ítem seleccionado */
+/* Estilos para las pestañas no seleccionadas */
+.react-tabs__tab:not(.react-tabs__tab--selected) {
+    background-color: #f0f0f04d; /* Fondo gris */
+    border-radius: 7px;
+}
+
+/* Aplica el desenfoque solo en las pestañas no seleccionadas */
+.react-tabs__tab:not(.react-tabs__tab--selected)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+

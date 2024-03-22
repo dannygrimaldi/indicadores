@@ -114,7 +114,7 @@ export default function BasicTable() {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead className="Headers">
               <TableRow>
-                <TableCell>TPSA</TableCell>
+              <TableCell className="StickyColumn">TPSA</TableCell>
                 <TableCell align="left" >Enero</TableCell>
 <TableCell align="left">Febrero</TableCell>
 <TableCell align="left">Marzo</TableCell>
@@ -159,7 +159,7 @@ export default function BasicTable() {
     key={row.name}
     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
   >
-    <TableCell component="th" scope="row">{row.name}</TableCell>
+    <TableCell className="StickyColumn" component="th" scope="row">{row.name}</TableCell>
     {Object.values(row).slice(1).map((value, index) => (
       <TableCell align="left" style={makeStyle(row)[index]} key={index}>{value}</TableCell>
     ))}

@@ -88,7 +88,7 @@
 
 
 /* Tablets */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .menuItem>span{
     display: none;
   }
@@ -129,5 +129,5 @@
   .close{
     left: -60%;
   }
-}
+} */
 

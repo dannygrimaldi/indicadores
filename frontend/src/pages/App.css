@@ -93,8 +93,8 @@ display: flex;
   background: var(--glass);
   border-radius: 0.3rem;
   gap: 16px;
-  grid-template-columns: 9rem auto 2rem;
-  overflow: hidden;
+  grid-template-columns: 9rem auto;
+  overflow: auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -110,3 +110,27 @@ display: flex;
     grid-template-columns: 1fr;
   } 
 }
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color del thumb */
+  border-radius: 4px  ; /* Borde redondeado del thumb */
+}
+
+/* Para navegadores WebKit (como Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 4px; /* ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color de fondo de la pista */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* color del pulgar */
+    border-radius: 4px; /* bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color del pulgar al pasar el mouse */
+}
+

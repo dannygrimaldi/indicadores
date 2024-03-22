@@ -1,4 +1,4 @@
-import './App.css';
+import { Box, Container, Typography, Grid } from '@mui/material';
 import CustomerReview from '../components/CustomerReview/CustomerReview';
 import Cards from '../components/Cards/Cards';
 import { cardsData as diariaCardsData } from "../Data/Data"; 
@@ -6,43 +6,24 @@ import { datax } from "../Data/Data";
 import Table from '../components/Table/Table'
 import '../styles/index.css'
 
-
 function App() {
   return (
-    <>
-      <h1> </h1>
-
-      <div style={{
-        overflowY: 'scroll',
-        overflow: 'auto',
-        overflowX: 'scroll',
-        height: '60rem',
-        width: '100%',
-
-      }} > 
-      <div style={{
-        marginBottom: '20px',
-        marginTop: '40px',
-     
+    <Container>
+      <Box my={4}>
         
-      }}> 
-      <Cards data={diariaCardsData} uniqueData={datax} />
-      </div>
-      <CustomerReview />
-      <div style={{
-        overflowX: 'scroll',
-/*         overflow: 'auto',
- */        width: '101rem', /*1640px  */
-        marginBottom: '20px',
-        marginTop: '40px',
-        }}>
-      
-      <Table/>
-      </div>
-      </div>
-    </>
+
+        <Grid container spacing={4}>
+          <Grid item xs={1} sm={12}>
+         
+            <Cards data={diariaCardsData} uniqueData={datax} />
+            <CustomerReview />
+            <Table />
+          </Grid>
+       
+        </Grid>
+      </Box>
+    </Container>
   );
 }
 
 export default App;
-

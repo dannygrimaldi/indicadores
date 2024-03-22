@@ -1,4 +1,6 @@
-.MuiTableRow-root > * {
+
+
+/* .MuiTableRow-root > * {
   padding: 10px;
 }
 
@@ -28,9 +30,9 @@ th {
 
 .Details {
   color: #00b5ff !important;
-}
+} */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .Table {
     width: 170%;
     margin-top: 2rem;
@@ -46,4 +48,17 @@ th {
     align-items: center;
     width: 23rem;
   }
+} */
+
+
+.Table {
+  overflow-x: auto; /* Hace que la tabla sea desplazable horizontalmente */
+  max-width: 100%; /* Ajusta el ancho máximo de la tabla según sea necesario */
+}
+
+.StickyColumn {
+  position: sticky;
+  left: 0;
+  z-index: 1; /* Asegura que la columna fija esté por encima del resto de la tabla */
+  background-color: #fff; /* Ajusta el color de fondo según sea necesario */
 }

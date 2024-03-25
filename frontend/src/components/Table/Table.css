@@ -62,3 +62,13 @@ th {
   z-index: 1; /* Asegura que la columna fija esté por encima del resto de la tabla */
   background-color: #fff; /* Ajusta el color de fondo según sea necesario */
 }
+.Table 
+th {
+  border: none !important;
+  background-color:rgb(213, 213, 213);
+
+}
+.Headers th {
+  color:#ffffff !important ;
+  background-color:rgb(0, 0, 0);
+}

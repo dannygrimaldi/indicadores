@@ -5,6 +5,8 @@ import { cardsData as diariaCardsData } from "../Data/Data";
 import { datax } from "../Data/Data"; 
 import Table from '../components/Table/Table'
 import '../styles/index.css'
+import Leads from '../components/CustomerReview/Leads';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
          
             <Cards data={diariaCardsData} uniqueData={datax} />
             <CustomerReview />
+            <Leads/>
             <Table />
           </Grid>
        

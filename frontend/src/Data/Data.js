@@ -223,7 +223,7 @@ export const datax = {
     },
 
     fill: {
-      colors: ["#fff"],
+      /* colors: ["#fff"],*/
       type: "gradient",
     },
     dataLabels: {
@@ -231,7 +231,7 @@ export const datax = {
     },
     stroke: {
       curve: "smooth",
-      colors: ["white"],
+      /* colors: ["white"], */
     },
     tooltip: {
       x: {
